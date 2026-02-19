@@ -4,154 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Palacio de Hierro | Soy Totalmente Palacio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top-black-bar">
-        <span class="yellow-text">AMAMOS LOS PUNTOS.</span>
-        <span class="white-text">Hasta <strong>12 Mensualidades sin intereses</strong> con tu Tarjeta Palacio.</span>
+    <div class="top-black-bar-wrapper">
+        <div class="container top-bar-content">
+            <span class="yellow-text">AMAMOS LOS PUNTOS.</span>
+            <span class="white-text">Hasta <strong>12 Mensualidades sin intereses</strong> con tu Tarjeta Palacio.</span>
+        </div>
     </div>
     <header>
-        <div class="services-nav-container">
-            <ul class="services-list">
-                <li><a href="#">TARJETA PALACIO</a></li>
-                <li><a href="#">SERVICIOS PALACIO</a></li>
-                <li><a href="#">MI PALACIO APP</a></li>
-                <li><a href="#">SEGUROS PALACIO</a></li>
-                <li><a href="#">GASTRONOMÍA PALACIO</a></li>
-                <li><a href="#">VIAJES PALACIO</a></li>
-                <li><a href="#">MUSEO PALACIO</a></li>
-                <li><a href="#">CELEBRA</a></li>
-            </ul>
-        </div>
-        <div class="header-main">
-            <div class="logo-container">
-                <a href="#">
-                    <img src="logoph.png" alt="El Palacio de Hierro" class="main-logo">
-                </a>
-            </div>
-            <div class="search-container">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" placeholder="¿Qué deseas buscar?">
-            </div>
-            <div class="user-actions">
-                <div class="action-item">
-                    <i class="fa-regular fa-user"></i>
-                    <span>INICIAR SESIÓN</span>
-                </div>
-                <div class="action-item icon-only">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="action-item icon-only">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </div>
+        <div class="services-nav-wrapper">
+            <div class="container">
+                <ul class="services-list">
+                    <li><a href="#">TARJETA PALACIO</a></li>
+                    <li><a href="#">SERVICIOS PALACIO</a></li>
+                    <li><a href="#">MI PALACIO APP</a></li>
+                    <li><a href="#">SEGUROS PALACIO</a></li>
+                    <li><a href="#">GASTRONOMÍA PALACIO</a></li>
+                    <li><a href="#">VIAJES PALACIO</a></li>
+                    <li><a href="#">MUSEO PALACIO</a></li>
+                    <li><a href="#">CELEBRA</a></li>
+                </ul>
             </div>
         </div>
-        <nav class="nav-container">
-            <ul class="main-menu">
-                <li class="category yellow-bg">OFERTAS</li>
-                <li class="category" data-target="m-disenadores">DISEÑADORES</li>
-                <li class="category" data-target="m-mujer">MUJER</li>
-                <li class="category" data-target="m-hombre">HOMBRE</li>
-                <li class="category" data-target="m-ninos">NIÑOS</li>
-                <li class="category" data-target="m-zapatos">ZAPATOS</li>
-                <li class="category" data-target="m-joyeria">JOYERÍA Y RELOJES</li>
-                <li class="category" data-target="m-belleza">BELLEZA</li>
-                <li class="category" data-target="m-hogar">HOGAR</li>
-                <li class="category" data-target="m-electronica">ELECTRÓNICA</li>
-                <li class="category" data-target="m-gourmet">GOURMET</li>
-                <li class="category" data-target="m-deportes">DEPORTES</li>
-                <li class="category" data-target="m-casa-palacio">CASA PALACIO</li>
-                <li class="category" data-target="m-tane">TANE</li>
-            </ul>
-            <div id="m-disenadores" class="mega-menu">
-                <div class="col"><h4>MUJER</h4><ul><li>Zapatos</li><li>Bolsos</li><li>Ropa</li></ul></div>
-                <div class="col"><h4>HOMBRE</h4><ul><li>Ropa</li><li>Zapatos</li><li>Relojes</li></ul></div>
-                <div class="col"><h4>MARCAS A-Z</h4><ul><li>Saint Laurent</li><li>Ferragamo</li><li>Balmain</li></ul></div>
-                <div class="col"><h4>PERSONAL SHOPPING</h4><ul><li>CHANEL</li><li>FENDI</li></ul></div>
+        <div class="header-main-wrapper">
+            <div class="container header-main-inner">
+                <div class="logo-container tooltip-custom" data-tooltip="Palacio de Hierro">
+                    <a href="#">
+                        <img src="logoph.png" alt="El Palacio de Hierro" class="main-logo">
+                    </a>
+                </div>
+                <div class="search-container">
+                    <button class="search-submit">
+                        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6.5" cy="6.5" r="5" stroke="#181818" stroke-width="1.2"/>
+                            <path d="M10 10L14.5 14.5" stroke="#181818" stroke-width="1.2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <input type="text" class="search-input" placeholder="¿Qué deseas buscar?">
+                </div>
+                <div class="user-actions">
+                    <div class="action-item account-item">
+                        <svg width="14" height="16" viewBox="0 0 24 24" fill="none" stroke="#181818" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>INICIAR SESIÓN</span>
+                    </div>
+                    <div class="action-item wishlist-item">
+                        <a href="#" class="wishlist-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#181818" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="action-item cart-item tooltip-custom" data-tooltip="Ver bolsa">
+                        <div class="minicart-total">
+                            <a href="#" class="minicart-link">
+                                <svg width="15" height="17" viewBox="0 0 24 24" fill="none" stroke="#181818" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="m-mujer" class="mega-menu">
-                <div class="col"><h4>ROPA</h4><ul><li>Blusas</li><li>Vestidos</li><li>Abrigos</li></ul></div>
-                <div class="col"><h4>ZAPATOS</h4><ul><li>Tenis</li><li>Sandalias</li><li>Botas</li></ul></div>
-                <div class="col"><h4>BOLSAS</h4><ul><li>De Mano</li><li>Mochilas</li></ul></div>
-                <div class="col"><h4>JOYERÍA</h4><ul><li>Fina</li><li>Relojes</li></ul></div>
+        </div>
+        <div class="main-nav-wrapper">
+            <div class="container main-menu-container">
+                <nav class="categories-navigation">
+                    <ul class="main-menu">
+                        <li class="category yellow-bg">OFERTAS</li>
+                        <li class="category" data-target="m-disenadores">DISEÑADORES</li>
+                        <li class="category" data-target="m-mujer">MUJER</li>
+                        <li class="category" data-target="m-hombre">HOMBRE</li>
+                        <li class="category" data-target="m-ninos">NIÑOS</li>
+                        <li class="category" data-target="m-zapatos">ZAPATOS</li>
+                        <li class="category" data-target="m-joyeria">JOYERÍA Y RELOJES</li>
+                        <li class="category" data-target="m-belleza">BELLEZA</li>
+                        <li class="category" data-target="m-hogar">HOGAR</li>
+                        <li class="category" data-target="m-electronica">ELECTRÓNICA</li>
+                        <li class="category" data-target="m-gourmet">GOURMET</li>
+                        <li class="category" data-target="m-deportes">DEPORTES</li>
+                        <li class="category" data-target="m-casa-palacio">CASA PALACIO</li>
+                        <li class="category" data-target="m-tane">TANE</li>
+                    </ul>
+                </nav>
             </div>
-            <div id="m-hombre" class="mega-menu">
-                <div class="col"><h4>ROPA</h4><ul><li>Playeras</li><li>Camisas</li><li>Trajes</li></ul></div>
-                <div class="col"><h4>ZAPATOS</h4><ul><li>Formales</li><li>Mocasines</li><li>Tenis</li></ul></div>
-                <div class="col"><h4>ACCESORIOS</h4><ul><li>Cinturones</li><li>Carteras</li></ul></div>
-                <div class="col"><h4>RELOJES</h4><ul><li>Deportivos</li><li>Alta Relojería</li></ul></div>
+            <div id="m-disenadores" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>MUJER</h4><ul><li>Zapatos</li><li>Bolsos & Carteras</li><li>Ropa</li><li>Relojes</li><li>Joyería</li><li>Accesorios</li><li>Lentes</li></ul></div>
+                    <div class="col"><h4>HOMBRE</h4><ul><li>Ropa</li><li>Zapatos</li><li>Relojes</li><li>Joyería</li><li>Escritura</li><li>Accesorios</li><li>Lentes</li></ul></div>
+                    <div class="col"><h4>MARCAS A-Z</h4><ul><li>Saint Laurent</li><li>Ferragamo</li><li>Aleví</li><li>Golden Goose</li><li>McQueen</li><li>JIMMY CHOO</li><li>Balmain</li><li>DOLCE&GABBANA</li><li>Maison Margiela</li></ul></div>
+                    <div class="col"><h4>PERSONAL SHOPPING</h4><ul><li>CHANEL</li><li>LOUIS VUITTON</li><li>Fendi</li><li>Roger Vivier</li></ul><h4>LO NUEVO</h4><h4>LO MÁS VENDIDO</h4><h4>TENDENCIAS</h4></div>
+                </div>
             </div>
-            <div id="m-ninos" class="mega-menu">
-                <div class="col"><h4>ROPA NIÑA</h4><ul><li>Vestidos</li><li>Faldas</li></ul></div>
-                <div class="col"><h4>ROPA NIÑO</h4><ul><li>Camisas</li><li>Pantalones</li></ul></div>
-                <div class="col"><h4>JUGUETES</h4><ul><li>LEGO</li><li>Muñecas</li></ul></div>
-                <div class="col"><h4>BEBÉS</h4><ul><li>Cunas</li><li>Carriolas</li></ul></div>
+            <div id="m-mujer" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>LO NUEVO</h4><h4>LO MÁS VENDIDO</h4><h4>TENDENCIAS</h4><h4>ROPA</h4><ul><li>Básicos</li><li>Blusas</li><li>Vestidos</li><li>Vestidos de Noche</li></ul></div>
+                    <div class="col"><h4>ZAPATOS</h4><ul><li>Zapatos de Diseñador</li><li>Tenis</li><li>Sandalias</li><li>Alpargatas</li><li>Zapatillas</li><li>Botines</li><li>Botas</li><li>Confort</li><li>Tenis Deportivos</li></ul></div>
+                    <div class="col"><h4>BOLSAS Y CARTERAS</h4><ul><li>Bolsos de Diseñador</li><li>Bolsos de Mano</li><li>Bolsos Crossbody</li><li>Bolsos Tote</li><li>Carteras & Tarjeteros</li><li>Mochilas</li><li>Cangureras</li></ul><h4>TRAJES DE BAÑO</h4></div>
+                    <div class="col"><h4>JOYERÍA</h4><ul><li>Alta Joyería</li><li>Joyería Fina</li><li>Joyería de Moda</li><li>Joyería de Fantasía</li></ul><h4>RELOJES</h4><ul><li>Moda</li><li>Finos</li><li>Alta Relojería</li></ul></div>
+                </div>
             </div>
-            <div id="m-zapatos" class="mega-menu">
-                <div class="col"><h4>MUJER</h4><ul><li>Zapatillas</li><li>Sandalias</li><li>Botas</li></ul></div>
-                <div class="col"><h4>HOMBRE</h4><ul><li>Oxford</li><li>Loafers</li><li>Tenis</li></ul></div>
-                <div class="col"><h4>NIÑOS</h4><ul><li>Escolares</li><li>Tenis</li></ul></div>
-                <div class="col"><h4>MARCAS</h4><ul><li>Steve Madden</li><li>Aldo</li><li>Kurt Geiger</li></ul></div>
+            <div id="m-hombre" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>LO NUEVO</h4><h4>LO MÁS VENDIDO</h4><h4>ROPA</h4><ul><li>Básicos</li><li>Ropa Diseñadores</li><li>Playeras</li><li>Camisas</li><li>Polos</li><li>Sudaderas & Hoodies</li></ul></div>
+                    <div class="col"><h4>ZAPATOS</h4><ul><li>Zapatos de Diseñador</li><li>Tenis</li><li>Botas & Botines</li><li>Sandalias & Pantuflas</li><li>Formales</li><li>Mocasines</li><li>Tenis Deportivos</li><li>Accesorios para Zapatos</li></ul></div>
+                    <div class="col"><h4>ACCESORIOS</h4><ul><li>Cinturones</li><li>Carteras & Tarjeteros</li><li>Gorras & Sombreros</li><li>Navajas</li><li>Bolsos & Portafolios</li><li>Lentes</li><li>Corbatas</li><li>Moños, Pañuelos & Tirantes</li><li>Mochilas</li></ul></div>
+                    <div class="col"><h4>RELOJES</h4><ul><li>Moda</li><li>Finos</li><li>Alta Relojería</li><li>Correas y Accesorios</li></ul><h4>JOYERÍA</h4><ul><li>Alta Joyería</li><li>Joyería Fina</li><li>Joyería de Moda</li></ul></div>
+                </div>
             </div>
-            <div id="m-joyeria" class="mega-menu">
-                <div class="col"><h4>RELOJES</h4><ul><li>Rolex</li><li>Cartier</li><li>Hublot</li><li>Tag Heuer</li></ul></div>
-                <div class="col"><h4>JOYERÍA FINA</h4><ul><li>Anillos</li><li>Collares</li><li>Aretes</li></ul></div>
-                <div class="col"><h4>DIAMANTES</h4><ul><li>Compromiso</li><li>Eternity</li></ul></div>
-                <div class="col"><h4>MARCAS</h4><ul><li>Tous</li><li>Swarovski</li><li>Pandora</li></ul></div>
+            <div id="m-ninos" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>LO NUEVO</h4><h4>LO MÁS VENDIDO</h4><h4>TENDENCIAS</h4><h4>ROPA NIÑA</h4><ul><li>Vestidos y Faldas</li><li>Blusas y Camisas</li><li>Sudaderas y Hoodies</li><li>Chamarras, Chalecos y Suéteres</li></ul></div>
+                    <div class="col"><h4>ZAPATOS</h4><ul><li>Niñas</li><li>Niños</li><li>Escolares de Niña</li><li>Escolares de Niño</li></ul><h4>ROPA NIÑO</h4><ul><li>Camisas y Playeras</li><li>Sudaderas y Hoodies</li><li>Chamarras, Chalecos y Suéteres</li></ul></div>
+                    <div class="col"><h4>JUGUETES</h4><ul><li>LEGO</li><li>Muñecas</li><li>Armables y Construcción</li><li>Preescolar</li><li>Figuras de Acción</li><li>Peluches</li><li>Juegos de Mesa</li><li>Coronas y Sueños</li><li>Casita Mágica</li></ul></div>
+                    <div class="col"><h4>ARTÍCULOS PARA BEBÉ</h4><ul><li>Alimentación</li><li>Baño</li><li>Blancos</li><li>Pañaleras</li><li>Sillas de Alimentación</li><li>Cunas</li><li>Carriolas y Accesorios</li><li>Autoasientos & Portabebés</li><li>Cambiadores</li></ul></div>
+                </div>
             </div>
-            <div id="m-belleza" class="mega-menu">
-                <div class="col"><h4>MAQUILLAJE</h4><ul><li>Rostro</li><li>Labios</li><li>Ojos</li><li>Paletas</li></ul></div>
-                <div class="col"><h4>PERFUMES</h4><ul><li>Mujer</li><li>Hombre</li><li>Nicho</li><li>Sets</li></ul></div>
-                <div class="col"><h4>SKINCARE</h4><ul><li>Sueros</li><li>Hidratantes</li><li>Limpiadores</li></ul></div>
-                <div class="col"><h4>CABELLO</h4><ul><li>Shampoos</li><li>Tratamientos</li><li>Herramientas</li></ul></div>
+            <div id="m-zapatos" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>MUJER</h4><ul><li>Zapatos de Diseñador</li><li>Tenis</li><li>Sandalias</li><li>Zapatillas</li><li>Botines</li><li>Botas</li><li>Alpargatas</li><li>Confort</li><li>Tenis Deportivos</li></ul></div>
+                    <div class="col"><h4>HOMBRE</h4><ul><li>Zapatos de Diseñador</li><li>Tenis</li><li>Botas & Botines</li><li>Sandalias & Pantuflas</li><li>Formales</li><li>Mocasines</li><li>Tenis Deportivos</li><li>Accesorios para Zapatos</li></ul></div>
+                    <div class="col"><h4>DISEÑADORES</h4><ul><li>Alexander McQueen</li><li>Golden Goose</li><li>Jimmy Choo</li><li>Ferragamo</li><li>Stuart Weitzman</li><li>Balenciaga</li></ul><h4>TENDENCIAS</h4><ul><li>Lo más vendido</li></ul></div>
+                    <div class="col"><h4>MARCAS EXCLUSIVAS</h4><ul><li>Desigual</li><li>Michael Kors</li><li>Mango</li><li>The North Face</li><li>Adolfo Dominguez</li><li>UGG</li><li>Aldo</li><li>DHierro</li></ul></div>
+                </div>
             </div>
-            <div id="m-hogar" class="mega-menu">
-                <div class="col"><h4>LÍNEA BLANCA</h4><ul><li>Lavadoras</li><li>Refrigeradores</li><li>Estufas</li></ul></div>
-                <div class="col"><h4>ELECTRODOMÉSTICOS</h4><ul><li>Licuadoras</li><li>Cafeteras</li><li>Batidoras</li></ul></div>
-                <div class="col"><h4>MUEBLES</h4><ul><li>Salas</li><li>Comedores</li><li>Sillas</li></ul></div>
-                <div class="col"><h4>COLCHONES</h4><ul><li>King Size</li><li>Matrimonial</li><li>Individual</li></ul></div>
+            <div id="m-joyeria" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>RELOJES MUJER</h4><ul><li>Moda</li><li>Finos</li><li>Alta Relojería</li><li>Correas y Accesorios</li></ul><h4>JOYERÍA MUJER</h4><ul><li>Alta Joyería</li><li>Fina</li><li>Moda</li></ul></div>
+                    <div class="col"><h4>RELOJES HOMBRE</h4><ul><li>Moda</li><li>Finos</li><li>Alta Relojería</li><li>Correas y Accesorios</li></ul><h4>JOYERÍA HOMBRE</h4><ul><li>Alta Joyería</li><li>Moda</li><li>Fina</li></ul></div>
+                    <div class="col"><h4>MARCAS ALTA RELOJERÍA</h4><ul><li>Rolex</li><li>Panerai</li><li>IWC Schaffhausen</li><li>Hublot</li><li>Franck Muller</li></ul><h4>MARCAS RELOJES</h4><ul><li>Tissot</li><li>Hamilton</li></ul></div>
+                    <div class="col"><h4>MARCAS JOYERÍA</h4><ul><li>Tous</li><li>Swarovski</li><li>Pandora</li><li>Uno de 50</li><li>Aristocrazy</li></ul><h4>ESCRITURA</h4><h4>MARCAS A-Z</h4></div>
+                </div>
             </div>
-            <div id="m-electronica" class="mega-menu">
-                <div class="col"><h4>CÓMPUTO</h4><ul><li>Laptops</li><li>Tablets</li><li>Monitores</li></ul></div>
-                <div class="col"><h4>TV & VIDEO</h4><ul><li>Pantallas</li><li>Proyectores</li><li>Sonido</li></ul></div>
-                <div class="col"><h4>CELULARES</h4><ul><li>iPhone</li><li>Samsung</li><li>Motorola</li></ul></div>
-                <div class="col"><h4>VIDEOJUEGOS</h4><ul><li>PlayStation</li><li>Xbox</li><li>Nintendo</li></ul></div>
+            <div id="m-belleza" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>LO NUEVO</h4><h4>LO MÁS VENDIDO</h4><h4>KITS</h4><h4>EXCLUSIVOS</h4><h4>CUIDADO DE LA PIEL</h4><ul><li>Sueros y Tratamientos</li><li>Hidratantes</li></ul></div>
+                    <div class="col"><h4>MAQUILLAJE</h4><ul><li>Rostro</li><li>Ojos</li><li>Labios</li><li>Sets</li><li>Mejillas</li><li>Brochas y Accesorios</li><li>Uñas</li></ul><h4>HOMBRE</h4></div>
+                    <div class="col"><h4>CABELLO</h4><ul><li>Herramientas y Accesorios</li><li>Tratamientos y Peinados</li><li>Shampoos</li><li>Acondicionadores</li><li>Mascarillas</li><li>Color</li><li>Sets de Cuidado del Cabello</li></ul><h4>EXPERIENCIAS</h4></div>
+                    <div class="col"><h4>PERFUMES</h4><ul><li>Mujer</li><li>Hombre</li><li>Perfumes Unisex</li><li>Perfumes de Nicho</li><li>Sets</li><li>Velas y Difusores</li></ul><h4>DERMOCOSMÉTICOS</h4><h4>TECHNO BEAUTY</h4></div>
+                </div>
             </div>
-            <div id="m-gourmet" class="mega-menu">
-                <div class="col"><h4>VINOS</h4><ul><li>Tinto</li><li>Blanco</li><li>Rosado</li><li>Espumosos</li></ul></div>
-                <div class="col"><h4>DESTILADOS</h4><ul><li>Tequila</li><li>Mezcal</li><li>Whisky</li><li>Vodka</li></ul></div>
-                <div class="col"><h4>ALIMENTOS</h4><ul><li>Chocolates</li><li>Café & Té</li><li>Conservas</li></ul></div>
-                <div class="col"><h4>ACCESORIOS BAR</h4><ul><li>Copas</li><li>Decantadores</li><li>Utensilios</li></ul></div>
+            <div id="m-hogar" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>LO NUEVO</h4><h4>LO MÁS VENDIDO</h4><h4>LÍNEA BLANCA</h4><ul><li>Refrigeradores</li><li>Lavadoras</li><li>Centros de Lavado</li><li>Estufas & Parrillas</li><li>Lavasecadoras</li><li>Cavas de Vino</li></ul></div>
+                    <div class="col"><h4>MUEBLES</h4><ul><li>Salas</li><li>Recámaras</li><li>Comedores</li><li>Sillas & Bancos</li><li>Mesas</li><li>Muebles Lujo</li><li>Muebles de Exterior</li><li>Estantes & Soportes de TV</li></ul></div>
+                    <div class="col"><h4>COLCHONES</h4><ul><li>King Size</li><li>Matrimonial</li><li>Colchón y Box</li><li>Boxes</li><li>Queen Size</li><li>Individual</li></ul><h4>ELECTRODOMÉSTICOS</h4><ul><li>Microondas</li></ul></div>
+                    <div class="col"><h4>COCINA</h4><ul><li>Baterías</li><li>Café & Té</li><li>Utensilios</li><li>Sartenes</li><li>Ollas</li><li>Repostería</li><li>Cuchillos</li></ul><h4>DECORACIÓN</h4></div>
+                </div>
             </div>
-            <div id="m-deportes" class="mega-menu">
-                <div class="col"><h4>ROPA DEPORTIVA</h4><ul><li>Playeras</li><li>Leggings</li><li>Shorts</li></ul></div>
-                <div class="col"><h4>CALZADO</h4><ul><li>Running</li><li>Futbol</li><li>Entrenamiento</li></ul></div>
-                <div class="col"><h4>APARATOS</h4><ul><li>Caminadoras</li><li>Elípticas</li><li>Bicicletas</li></ul></div>
-                <div class="col"><h4>ACCESORIOS</h4><ul><li>Mochilas</li><li>Gorras</li><li>Balones</li></ul></div>
+            <div id="m-electronica" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>LO NUEVO</h4><h4>LO MÁS VENDIDO</h4><h4>TV & VIDEO</h4><ul><li>Pantallas</li><li>Soportes para Pantallas</li><li>Proyectores</li><li>Reproductores Streaming</li><li>Accesorios</li></ul></div>
+                    <div class="col"><h4>CELULARES</h4><ul><li>Celulares</li><li>iPhone</li><li>Samsung</li><li>Motorola</li><li>Huawei</li><li>Desbloqueados</li><li>Fundas & Protectores</li><li>Accesorios</li></ul></div>
+                    <div class="col"><h4>CÓMPUTO</h4><ul><li>Laptops</li><li>Computadoras Gamer</li><li>Monitores</li><li>Mochilas</li><li>Teclados</li><li>Cables & Accesorios</li><li>Mouse</li><li>Impresoras y Multifunción</li></ul></div>
+                    <div class="col"><h4>SMARTWATCHES</h4><h4>VIDEOJUEGOS</h4><ul><li>Nintendo</li><li>PlayStation</li><li>Consolas</li><li>XBOX</li><li>Juegos</li><li>Accesorios</li><li>Coleccionables</li></ul></div>
+                </div>
             </div>
-            <div id="m-casa-palacio" class="mega-menu">
-                <div class="col"><h4>DECORACIÓN</h4><ul><li>Velas & Aromas</li><li>Espejos</li><li>Figuras</li></ul></div>
-                <div class="col"><h4>MESA</h4><ul><li>Vajillas</li><li>Cubiertos</li><li>Cristalería</li></ul></div>
-                <div class="col"><h4>BAÑO</h4><ul><li>Toallas</li><li>Accesorios</li><li>Batas</li></ul></div>
-                <div class="col"><h4>CAMA</h4><ul><li>Sábanas</li><li>Edredones</li><li>Almohadas</li></ul></div>
+            <div id="m-gourmet" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>LO NUEVO</h4><h4>LO MÁS VENDIDO</h4><h4>VINOS</h4><ul><li>Grandes Vinos</li><li>Champagne</li><li>Vino Tinto</li><li>Vino Blanco</li><li>Vino Rosado</li><li>Vino Espumoso</li></ul></div>
+                    <div class="col"><h4>DESTILADOS & LICORES</h4><ul><li>Tequilas</li><li>Whisky</li><li>Vodka</li><li>Mezcal</li><li>Ginebra</li><li>Ron</li><li>Brandy</li><li>Sotol</li><li>Licores</li></ul></div>
+                    <div class="col"><h4>SALUDABLE</h4><ul><li>Orgánica</li><li>Suplementos & Vitaminas</li><li>Vinos y Cervezas Sin Alcohol</li><li>Untables</li><li>Superfoods</li><li>Sin Azúcar</li><li>Snacks</li><li>Sin Gluten</li><li>Pastas</li></ul></div>
+                    <div class="col"><h4>ALIMENTOS</h4><ul><li>Bacalao</li><li>Snacks y Botanas</li><li>Orientales</li><li>Charcutería, Tocinería y Salchichonería</li><li>Conservas & Frutas</li><li>Frutos Secos, Semillas y Granos</li><li>Conservas del Mar</li><li>Mermeladas y Untables</li></ul></div>
+                </div>
             </div>
-            <div id="m-tane" class="mega-menu">
-                <div class="col"><h4>COLECCIONES</h4><ul><li>México Mi Amor</li><li>Bordados</li><li>Animales</li></ul></div>
-                <div class="col"><h4>JOYERÍA</h4><ul><li>Anillos</li><li>Pulseras</li><li>Aretes</li></ul></div>
-                <div class="col"><h4>MATERIALES</h4><ul><li>Plata</li><li>Oro</li><li>Vermeil</li></ul></div>
-                <div class="col"><h4>REGALOS</h4><ul><li>Para Ella</li><li>Para Él</li><li>Objetos</li></ul></div>
+            <div id="m-deportes" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>LO NUEVO</h4><h4>LO MÁS VENDIDO</h4><h4>HOMBRE</h4><ul><li>Tenis Deportivos</li><li>Ropa Deportiva</li><li>Accesorios Deportivos</li></ul><h4>NIÑOS</h4><ul><li>Tenis</li></ul></div>
+                    <div class="col"><h4>MUJER</h4><ul><li>Tenis Deportivos</li><li>Ropa Deportiva</li><li>Accesorios Deportivos</li></ul><h4>NIÑAS</h4><ul><li>Tenis</li><li>Ropa</li><li>Accesorios</li></ul><h4>SUPLEMENTOS Y VITAMINAS</h4></div>
+                    <div class="col"><h4>APARATOS DE EJERCICIO</h4><ul><li>Gimnasios</li><li>Bicicletas Estáticas</li><li>Bicicletas</li><li>Caminadoras</li><li>Elípticas</li></ul><h4>MONITORES DEPORTIVOS</h4><h4>MARCAS A-Z</h4></div>
+                    <div class="col"><h4>POR DEPORTE</h4><ul><li>Running</li><li>Training</li><li>Yoga</li><li>Padel & Tennis</li><li>Ciclismo</li><li>Aventura</li><li>Futbol</li><li>Básquetbol</li><li>Natación</li></ul></div>
+                </div>
             </div>
-        </nav>
+            <div id="m-casa-palacio" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>SALA</h4><ul><li>Sillones</li><li>Sofás</li><li>Mesas</li><li>Esquineras</li><li>Modulares</li><li>Taburetes</li></ul><h4>ROPA DE CAMA</h4><ul><li>Básicos de Cama</li></ul></div>
+                    <div class="col"><h4>COMEDOR</h4><ul><li>Mesas</li><li>Sillas</li><li>Complementos</li></ul><h4>DECORACIÓN</h4><ul><li>Cojines</li><li>Espejos</li><li>Lámparas & Candelabros</li><li>Tapetes</li></ul></div>
+                    <div class="col"><h4>MESA</h4><ul><li>Vajillas</li><li>Accesorios de Mesa</li><li>Piezas de Servicio</li></ul><h4>KIDS & TEENS</h4><ul><li>Muebles</li><li>Decoración</li><li>Accesorios</li></ul></div>
+                    <div class="col"><h4>RECÁMARA</h4><ul><li>Burós</li><li>Camas, Bases & Cabeceras</li><li>Colchones</li></ul><h4>BAÑO</h4><ul><li>Toallas</li><li>Accesorios</li><li>Tapetes</li><li>Batas</li></ul></div>
+                </div>
+            </div>
+            <div id="m-tane" class="mega-menu-wrapper">
+                <div class="container mega-menu-inner">
+                    <div class="col"><h4>DESCUBRE POR CATEGORÍA</h4><ul><li>Anillos</li><li>Pulseras</li><li>Aretes</li><li>Collares</li><li>Charms</li><li>Cadenas</li><li>Accesorios</li></ul></div>
+                    <div class="col"><h4>DESCUBRE POR COLECCIÓN</h4><ul><li>México Mi Amor</li><li>Frida Kahlo por TANE</li><li>Xocolate por TANE</li><li>Alma por TANE</li><li>Íconos</li><li>Animales por TANE</li><li>Orbital por TANE</li><li>Épico</li><li>Dalia</li></ul></div>
+                    <div class="col"><h4>DESCUBRE POR MATERIAL</h4><ul><li>Plata</li><li>Plata con Vermeil</li><li>Oro</li><li>Diamantes</li></ul></div>
+                    <div class="col"><h4>CASA TANE</h4><h4>EL ARTE DE REGALAR</h4><ul><li>Para Él</li><li>Para Ella</li><li>Joyas para Impresionar</li><li>Detalles de Lujo</li><li>Objetos con Presencia</li></ul></div>
+                </div>
+            </div>
+        </div>
     </header>
-    <div class="hero-image-container">
-        IMAGEN: AMAMOS LOS PUNTOS
-    </div>
-    <div class="cookie-bar" id="cookieBar">
-        <p>En elpalaciodehierro.com utilizamos cookies. Al utilizar este sitio, acepta nuestra política de cookies.</p>
-        <button id="btnAcepto">ACEPTO</button>
+    <main class="hero-image-wrapper">
+        <svg class="carousel-control-previous" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#181818" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        <div class="hero-image-content">
+            IMAGEN PRINCIPAL
+        </div>
+        <svg class="carousel-control-next" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#181818" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </main>
+    <div class="cookie-wrapper" id="cookieWrapper">
+        <div class="container cookie-container-inner">
+            <div class="cookie-content">
+                <p class="cookies-info">
+                    En elpalaciodehierro.com utilizamos cookies. Al utilizar este sitio, acepta nuestra <a href="#" class="cookies-link">política de cookies</a>.
+                </p>
+                <button id="btnAcepto" class="cookies-accept-btn">ACEPTO</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const categories = document.querySelectorAll('.category');
-    const megaMenus = document.querySelectorAll('.mega-menu');
-    const navContainer = document.querySelector('.nav-container');
+    const megaMenus = document.querySelectorAll('.mega-menu-wrapper');
+    const navWrapper = document.querySelector('.main-nav-wrapper');
     let timeoutId;
+    
     function closeAllMenus() {
         megaMenus.forEach(menu => menu.classList.remove('active'));
+        // Remueve la clase que mantiene la línea encendida de todas las categorías
+        categories.forEach(c => c.classList.remove('active-category'));
     }
+    
     categories.forEach(category => {
         category.addEventListener('mouseenter', () => {
             clearTimeout(timeoutId);
@@ -14,33 +18,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 closeAllMenus();
                 return;
             }
-            megaMenus.forEach(menu => {
-                if (menu.id !== targetId) {
-                    menu.classList.remove('active');
-                }
-            });
+            
+            // Cierra otros menús antes de abrir el nuevo
+            closeAllMenus();
+            
             const targetMenu = document.getElementById(targetId);
             if (targetMenu) {
-                setTimeout(() => {
-                    targetMenu.classList.add('active');
-                }, 100);
+                targetMenu.classList.add('active');
+                // Añade la clase a la palabra actual para que la línea se quede fija
+                category.classList.add('active-category');
             }
         });
     });
-    navContainer.addEventListener('mouseleave', () => {
+    
+    navWrapper.addEventListener('mouseleave', () => {
         timeoutId = setTimeout(() => {
             closeAllMenus();
-        }, 300);
+        }, 150);
     });
+    
     megaMenus.forEach(menu => {
         menu.addEventListener('mouseenter', () => {
             clearTimeout(timeoutId);
         });
     });
+    
     const btnAcepto = document.getElementById('btnAcepto');
     if (btnAcepto) {
         btnAcepto.addEventListener('click', () => {
-            document.getElementById('cookieBar').style.display = 'none';
+            document.getElementById('cookieWrapper').style.display = 'none';
         });
     }
 });
